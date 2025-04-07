@@ -4,191 +4,151 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fizyothera | Fizik Tedavi ve Rehabilitasyon Merkezi</title>
-  <meta name="description" content="Fizyothera, İzmir Gaziemir'de fizik tedavi ve rehabilitasyon hizmetleri sunan bir merkezdir. Ortopedik rehabilitasyon, sporcu sağlığı, medikal masaj, klinik pilates ve manuel terapi hizmetleriyle sağlığınızı destekliyoruz.">
-  <meta name="keywords" content="Fizyoterapi, Fizik Tedavi, Rehabilitasyon, İzmir, Gaziemir, Ortopedik Rehabilitasyon, Sporcu Sağlığı, Medikal Masaj, Klinik Pilates, Manuel Terapi">
-  <meta name="author" content="Fizyothera">
-  <meta property="og:title" content="Fizyothera | Fizik Tedavi ve Rehabilitasyon Merkezi">
-  <meta property="og:description" content="İzmir Gaziemir'de fizik tedavi ve rehabilitasyon hizmetleri sunuyoruz.">
-  <meta property="og:image" content="URL_TO_YOUR_IMAGE">
-  <meta property="og:url" content="URL_TO_YOUR_WEBSITE">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    /* Genel Stil */
     body {
       margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background: #f4f7f6;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9fbfd, #e6f4f1);
+      color: #2b2b2b;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    a {
-      color: #1b6b8f;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    /* Header */
     header {
-      background: #fff;
-      padding: 20px;
+      background-color: #ffffff;
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
-    header img {
-      max-height: 80px;
+    header svg, header img {
+      max-height: 90px;
+      width: auto;
     }
-    header h1 {
+    h1 {
+      font-size: 2.8rem;
       margin: 10px 0 5px;
-      font-size: 2.5rem;
-      color: #1b6b8f;
-    }
-    header .slogan {
-      font-style: italic;
-      color: #b17053;
-      font-size: 1.2rem;
-    }
-    /* Navigasyon */
-    nav {
-      background: #1b6b8f;
-      padding: 10px 0;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      font-weight: bold;
-    }
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-    /* Ana İçerik */
-    .container {
-      max-width: 1100px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    section {
-      margin-bottom: 20px;
     }
     h2 {
       color: #1b6b8f;
-      border-bottom: 2px solid #1b6b8f;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+      margin-top: 40px;
+      font-size: 1.6rem;
     }
-    /* Hizmetler Listesi */
+    .slogan {
+      font-style: italic;
+      color: #b17053;
+      font-size: 1.3rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
     .services ul {
       list-style: none;
       padding: 0;
+      line-height: 1.8;
     }
-    .services ul li {
-      padding-left: 25px;
-      position: relative;
-      margin-bottom: 10px;
-    }
-    .services ul li:before {
-      content: "✔";
+    .services li::before {
+      content: "✔️ ";
       color: #1b6b8f;
-      position: absolute;
-      left: 0;
-      top: 0;
     }
-    /* İletişim Bölümü */
     .contact {
-      background: #e9f9ff;
-      padding: 20px;
-      border-radius: 8px;
-    }
-    .contact p {
-      margin: 10px 0;
+      background-color: #e9f9ff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     }
     .contact strong {
       color: #0a5a75;
     }
-    .contact a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      color: #fff;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    .contact .whatsapp {
-      background: #25D366;
-    }
-    .contact .whatsapp:hover {
-      background: #1ebe5b;
-    }
-    .contact .instagram {
-      background: #e1306c;
-    }
-    .contact .instagram:hover {
-      background: #c3275e;
-    }
-    /* Harita */
     .map {
       margin-top: 20px;
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
-    iframe {
-      width: 100%;
-      border: none;
-    }
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #1b6b8f;
-      color: #fff;
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
       margin-top: 20px;
     }
-    /* Responsive Tasarım */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      nav ul li {
-        display: block;
-        margin: 10px 0;
-      }
+    .btn {
+      padding: 12px 22px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
+    }
+    .instagram-button {
+      background-color: #e1306c;
+    }
+    .instagram-button:hover {
+      background-color: #c3275e;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background-color: #d4eaf2;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="data:image/png;base64,..." alt="Fizyothera Logo">
+    <!-- Inline Base64 Image Logo -->
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABFAAAAMHCAIAAACRyTSqAAEAAElEQVR4nOz9W5AsSZoehn3/7xGZVXVu3adPX6d7Znp2LjuzmF0AC+4uCBALYBd3LAVCqwtlICWZ0fgg0qQXmUzUmx70INOLXvkkmR4ko2QmyciFRImkJANIgFxigQV2dnfu0/c+fa5Vp6ryEhH+f3rwiMzIzIjMiKzIqqw68c2Z6qpMD/c/PDzc/8//i8u/+d//tyKF+JFZJoMjIEKiKhDNTOglIqDwgGVqFHGmQkWPGwqSrYpDWpUHKIC0" alt="Fizyothera Logo" />
     <h1>Fizyothera</h1>
-    <div class="slogan">Hareket İyileştirir</div>
+    <div class="slogan">Hareket iyileştirir</div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#about">Hakkımızda</a></li>
-      <li><a href="#services">Hizmetlerimiz</a></li>
-      <li><a href="#contact">İletişim</a></li>
-    </ul>
-  </nav>
+
   <div class="container">
-    <section id="about">
+    <section class="about">
       <h2>Hakkımızda</h2>
-      <p>Fizyothera Fizik Tedavi ve Rehabilitasyon Merkezi olarak, bireylerin yaşam kalitesini artırmayı
-::contentReference[oaicite:0]{index=0}
+      <p>
+        Fizyothera Fizik Tedavi ve Rehabilitasyon Merkezi olarak, bireylerin yaşam kalitesini artırmayı ve sağlıklı hareket kabiliyetlerini geri kazandırmayı amaçlıyoruz. İzmir Gaziemir'de bulunan kliniğimizde alanında uzman fizyoterapistlerimizle kişiye özel değerlendirme ve tedavi yöntemleri sunuyoruz. Modern ekipmanlarımız ve bilimsel yaklaşımlarımızla, güvenli ve etkili fizyoterapi hizmetleri sağlıyoruz.
+      </p>
+    </section>
+
+    <section class="services">
+      <h2>Hizmetlerimiz</h2>
+      <ul>
+        <li>Ortopedik Rehabilitasyon</li>
+        <li>Sporcu Sağlığı</li>
+        <li>Medikal Masaj</li>
+        <li>Klinik Pilates / Reformer</li>
+        <li>Manuel Terapi</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>İletişim</h2>
+      <p><strong>Adres:</strong> İzmir / Gaziemir, Atıfbey Mahallesi 65 Sokak No:13C</p>
+      <p><strong>Telefon:</strong> <a href="tel:+905331511207">+90 533 151 1207</a></p>
+      <p><strong>Randevu:</strong> Sadece telefon ile alınmaktadır.</p>
+
+      <div class="button-group">
+        <a class="btn whatsapp-button" href="https://wa.me/905331511207" target="_blank">WhatsApp ile İletişime Geç</a>
+        <a class="btn instagram-button" href="https://www.instagram.com/fizyo.thera" target="_blank">Instagram'da Takip Et</a>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.785621758595!2d27.11614611563302!3d38.33709768935479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9623f6e4cc2ef%3A0x7b2e2539c7d10aef!2s65.%20Sk.%20No%3A13C%2C%20At%C4%B1fbey%2C%2035410%20Gaziemir%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1712489800000!5m2!1str!2str"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Fizyothera Fizik Tedavi ve Rehabilitasyon Merkezi. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
+
  
